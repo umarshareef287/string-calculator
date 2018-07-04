@@ -57,4 +57,10 @@ RSpec.describe Calculation, type: :model do
     expect(result).to eq(916.07)
   end
 
+  it 'just for fun' do 
+    input = '++'
+    result = Calculation.new.evaluate_arithmetic_expression(input)
+    expect(result).to eq("Just for test")
+  end
+
 end
